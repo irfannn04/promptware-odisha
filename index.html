@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odisha Cultural Heritage — PromptWare Submission</title>
+    <meta name="description" content="An AI-generated artistic tribute to Odisha's rich cultural heritage — featuring Odissi dance, the Konark Sun Temple wheel, Jagannath Rath Yatra, and Dashavatara traditions.">
+    <meta name="keywords" content="PromptWare, AI Art, Odisha, Odissi, Konark, Rath Yatra, Dashavatara, Cultural Heritage, Prompt Engineering">
+    <meta name="author" content="PromptWare Submission">
+    <meta property="og:title" content="Odisha Cultural Heritage — PromptWare">
+    <meta property="og:description" content="AI-generated artistic tribute to Odisha's cultural legacy">
+    <meta property="og:image" content="hero.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to main content link for keyboard/screen reader users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Particle canvas background (decorative) -->
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <!-- Live region for announcements (copy feedback, etc.) -->
+    <div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav id="navbar" aria-label="Main navigation">
+            <div class="nav-brand">
+                <span class="nav-icon" aria-hidden="true">✦</span>
+                <span class="nav-title">PromptWare</span>
+            </div>
+            <div class="nav-links" role="list">
+                <a href="#hero" role="listitem">Home</a>
+                <a href="#artwork" role="listitem">Artwork</a>
+                <a href="#prompt" role="listitem">Prompt</a>
+                <a href="#elements" role="listitem">Elements</a>
+                <a href="#about" role="listitem">About</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu" type="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation menu" aria-hidden="true">
+        <nav aria-label="Mobile navigation">
+            <a href="#hero" tabindex="-1">Home</a>
+            <a href="#artwork" tabindex="-1">Artwork</a>
+            <a href="#prompt" tabindex="-1">Prompt</a>
+            <a href="#elements" tabindex="-1">Elements</a>
+            <a href="#about" tabindex="-1">About</a>
+        </nav>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    PromptWare Submission
+                </div>
+                <h1 id="hero-heading" class="hero-title animate-on-scroll">
+                    <span class="title-line">Odisha</span>
+                    <span class="title-line accent">Cultural Heritage</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    An AI-generated artistic tribute to the timeless traditions of Odisha — 
+                    where temple architecture, classical dance, and divine festivals converge 
+                    in a single breathtaking composition.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#artwork" class="btn-primary">
+                        <span>View Artwork</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#prompt" class="btn-secondary">Explore Prompt</a>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- Artwork Section -->
+        <section id="artwork" aria-labelledby="artwork-heading">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">01 — The Artwork</span>
+                    <h2 id="artwork-heading" class="section-title">A Visual Symphony of Heritage</h2>
+                    <p class="section-desc">Every element in this composition tells a story that spans millennia — from the stone wheels of Konark to the living tradition of Odissi dance.</p>
+                </div>
+                <div class="artwork-showcase animate-on-scroll">
+                    <figure class="artwork-frame" role="button" tabindex="0" aria-label="View artwork in full screen">
+                        <div class="frame-corner tl" aria-hidden="true"></div>
+                        <div class="frame-corner tr" aria-hidden="true"></div>
+                        <div class="frame-corner bl" aria-hidden="true"></div>
+                        <div class="frame-corner br" aria-hidden="true"></div>
+                        <img src="hero.jpg" alt="AI-generated artwork celebrating Odisha's cultural heritage: An Odissi dancer performs the tribhanga pose wearing Sambalpuri silk and silver filigree jewelry, standing before the iconic Konark Sun Temple stone chariot wheel. To the left, the Jagannath Rath Yatra procession fills the scene with colorful chariots and devotees. A Dashavatara pattachitra scroll unfurls in the foreground. In the background, flamingos fly over Chilika Lake at golden hour. The bottom border features Saura tribal art motifs." id="artworkImg" loading="eager">
+                        <div class="artwork-glow" aria-hidden="true"></div>
+                    </figure>
+                    <div class="artwork-meta" role="list" aria-label="Artwork details">
+                        <div class="meta-item" role="listitem">
+                            <span class="meta-label">Model</span>
+                            <span class="meta-value">ChatGPT / DALL·E</span>
+                        </div>
+                        <div class="meta-item" role="listitem">
+                            <span class="meta-label">Theme</span>
+                            <span class="meta-value">Cultural Heritage</span>
+                        </div>
+                        <div class="meta-item" role="listitem">
+                            <span class="meta-label">Region</span>
+                            <span class="meta-value">Odisha, India</span>
+                        </div>
+                        <div class="meta-item" role="listitem">
+                            <span class="meta-label">Category</span>
+                            <span class="meta-value">PromptWare Art</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prompt Section -->
+        <section id="prompt" aria-labelledby="prompt-heading">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">02 — The Prompt</span>
+                    <h2 id="prompt-heading" class="section-title">Crafted with Intention</h2>
+                    <p class="section-desc">The prompt behind this artwork was carefully engineered to capture the essence of Odisha's multifaceted cultural identity.</p>
+                </div>
+                <div class="prompt-card animate-on-scroll">
+                    <div class="prompt-header">
+                        <div class="prompt-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="prompt-label" id="prompt-file-label">prompt.txt</span>
+                        <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy prompt text to clipboard">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                    <div class="prompt-body">
+                        <p id="promptText">Create a hyper-detailed, cinematic artwork celebrating the cultural heritage of Odisha, India. The composition should feature an Odissi dancer in a traditional tribhanga pose at the center, wearing authentic Sambalpuri silk with silver filigree jewelry. Behind her, place the iconic stone chariot wheel of the Konark Sun Temple with intricate carvings. On the left, depict the grand Jagannath Rath Yatra procession with colorful chariots and devotees. Include a Dashavatara pattachitra scroll unfurling in the foreground. In the background, show Chilika Lake at golden hour with flamingos in flight and traditional boats. The bottom border features tribal Saura art motifs. The sky is a dramatic sunset with warm golden and amber tones. Style: photorealistic digital art with the richness of classical Indian miniature painting.</p>
+                    </div>
+                </div>
+                <div class="prompt-techniques animate-on-scroll">
+                    <h3>Prompt Engineering Techniques Used</h3>
+                    <div class="techniques-grid" role="list">
+                        <div class="technique-card" role="listitem">
+                            <div class="technique-icon" aria-hidden="true">🎯</div>
+                            <h4>Spatial Composition</h4>
+                            <p>Precise placement directives — center, left, background, foreground, bottom border — to control the visual hierarchy.</p>
+                        </div>
+                        <div class="technique-card" role="listitem">
+                            <div class="technique-icon" aria-hidden="true">🎨</div>
+                            <h4>Style Anchoring</h4>
+                            <p>Combining "photorealistic digital art" with "classical Indian miniature painting" to achieve a unique hybrid aesthetic.</p>
+                        </div>
+                        <div class="technique-card" role="listitem">
+                            <div class="technique-icon" aria-hidden="true">📐</div>
+                            <h4>Cultural Specificity</h4>
+                            <p>Named authentic elements — tribhanga pose, Sambalpuri silk, Saura art, pattachitra — to ensure cultural accuracy.</p>
+                        </div>
+                        <div class="technique-card" role="listitem">
+                            <div class="technique-icon" aria-hidden="true">🌅</div>
+                            <h4>Atmospheric Direction</h4>
+                            <p>Lighting and mood cues — "golden hour", "dramatic sunset", "warm golden and amber tones" — to unify the scene.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Elements Section -->
+        <section id="elements" aria-labelledby="elements-heading">
+            <div class="section-container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">03 — Cultural Elements</span>
+                    <h2 id="elements-heading" class="section-title">Stories Within the Scene</h2>
+                    <p class="section-desc">Each element in this artwork represents a distinct facet of Odisha's living cultural tapestry.</p>
+                </div>
+                <div class="elements-grid" role="list">
+                    <article class="element-card animate-on-scroll" style="--delay: 0s" role="listitem">
+                        <div class="element-number" aria-hidden="true">01</div>
+                        <div class="element-icon" aria-hidden="true">💃</div>
+                        <h3>Odissi Dance</h3>
+                        <p>One of India's eight classical dance forms, originating from the temples of Odisha. The tribhanga (three-bend) pose is its signature, expressing grace and devotion through sculpted body geometry.</p>
+                    </article>
+                    <article class="element-card animate-on-scroll" style="--delay: 0.1s" role="listitem">
+                        <div class="element-number" aria-hidden="true">02</div>
+                        <div class="element-icon" aria-hidden="true">☸️</div>
+                        <h3>Konark Sun Temple</h3>
+                        <p>A 13th-century UNESCO World Heritage Site designed as a colossal chariot of the Sun God Surya. The stone wheels are engineering marvels that function as sundials, accurate to the minute.</p>
+                    </article>
+                    <article class="element-card animate-on-scroll" style="--delay: 0.2s" role="listitem">
+                        <div class="element-number" aria-hidden="true">03</div>
+                        <div class="element-icon" aria-hidden="true">🛕</div>
+                        <h3>Jagannath Rath Yatra</h3>
+                        <p>The annual chariot festival of Lord Jagannath in Puri — one of the oldest and grandest religious festivals in the world. The English word "juggernaut" derives from Jagannath.</p>
+                    </article>
+                    <article class="element-card animate-on-scroll" style="--delay: 0.3s" role="listitem">
+                        <div class="element-number" aria-hidden="true">04</div>
+                        <div class="element-icon" aria-hidden="true">🎨</div>
+                        <h3>Dashavatara Pattachitra</h3>
+                        <p>Traditional cloth-based scroll painting depicting the ten avatars of Lord Vishnu. Pattachitra artists in Raghurajpur village have kept this art alive for over a thousand years.</p>
+                    </article>
+                    <article class="element-card animate-on-scroll" style="--delay: 0.4s" role="listitem">
+                        <div class="element-number" aria-hidden="true">05</div>
+                        <div class="element-icon" aria-hidden="true">🦩</div>
+                        <h3>Chilika Lake</h3>
+                        <p>Asia's largest brackish water lagoon and a Ramsar wetland site. It hosts over a million migratory birds each winter, including flamingos that paint the sky pink at dusk.</p>
+                    </article>
+                    <article class="element-card animate-on-scroll" style="--delay: 0.5s" role="listitem">
+                        <div class="element-number" aria-hidden="true">06</div>
+                        <div class="element-icon" aria-hidden="true">✍️</div>
+                        <h3>Saura Tribal Art</h3>
+                        <p>Ancient wall paintings by the Saura tribe of southern Odisha, known as "ikons." These geometric figures depict daily life, nature, and rituals in a distinctive stick-figure style.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="section-container">
+                <div class="about-grid animate-on-scroll">
+                    <div class="about-content">
+                        <span class="section-tag">04 — About This Submission</span>
+                        <h2 id="about-heading" class="section-title">PromptWare</h2>
+                        <p>This project is a submission for <strong>PromptWare</strong> — showcasing the art and craft of prompt engineering through AI-generated visual art.</p>
+                        <p>The goal was to demonstrate how carefully structured prompts can produce culturally rich, historically informed, and visually stunning artwork that respects and celebrates heritage.</p>
+                        <div class="about-stats" role="list" aria-label="Project statistics">
+                            <div class="stat" role="listitem">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Cultural Elements</span>
+                            </div>
+                            <div class="stat" role="listitem">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Composite Artwork</span>
+                            </div>
+                            <div class="stat" role="listitem">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Prompt Techniques</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-tech">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-pills" role="list" aria-label="Technologies used">
+                            <span class="pill" role="listitem">ChatGPT</span>
+                            <span class="pill" role="listitem">DALL·E</span>
+                            <span class="pill" role="listitem">Prompt Engineering</span>
+                            <span class="pill" role="listitem">HTML5</span>
+                            <span class="pill" role="listitem">CSS3</span>
+                            <span class="pill" role="listitem">JavaScript</span>
+                            <span class="pill" role="listitem">GitHub Pages</span>
+                        </div>
+                        <h3>License</h3>
+                        <p class="license-text">This project is open source under the MIT License. The AI-generated artwork is shared for educational and demonstration purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="nav-icon" aria-hidden="true">✦</span>
+                <span>PromptWare Submission</span>
+            </div>
+            <p class="footer-text">Crafted with intention. Powered by AI. Rooted in heritage.</p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="https://github.com/irfannn04/promptware-odisha" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(opens in new tab)</span></a>
+                <span class="divider" aria-hidden="true">·</span>
+                <a href="#prompt">View Prompt</a>
+                <span class="divider" aria-hidden="true">·</span>
+                <a href="#artwork">View Artwork</a>
+            </nav>
+            <p class="footer-copy">&copy; 2026 PromptWare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Full screen artwork view" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close full screen view" type="button">&times;</button>
+        <img src="hero.jpg" alt="Full screen view of the Odisha Cultural Heritage AI-generated artwork" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
