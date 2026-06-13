@@ -1,0 +1,28 @@
+{
+  "name": "promptware-odisha",
+  "version": "1.0.0",
+  "description": "AI-generated artistic tribute to Odisha's cultural heritage - PromptWare Submission",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageReporters=text --coverageReporters=lcov",
+    "test:a11y": "jest --testPathPattern=accessibility",
+    "test:security": "jest --testPathPattern=security",
+    "test:dom": "jest --testPathPattern=dom",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration",
+    "lint": "eslint script.js",
+    "validate": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-axe": "^8.0.0",
+    "eslint": "^8.56.0",
+    "@testing-library/jest-dom": "^6.1.0"
+  },
+  "keywords": ["promptware", "ai-art", "odisha", "cultural-heritage"],
+  "author": "irfannn04",
+  "license": "MIT"
+}
